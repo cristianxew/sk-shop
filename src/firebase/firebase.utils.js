@@ -22,6 +22,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 
   const snapShot = await userRef.get();
 
+  //if there is no user, create a new user on the storage
   if (!snapShot.exists) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
