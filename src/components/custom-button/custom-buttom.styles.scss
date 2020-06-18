@@ -1,15 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap");
+
 .custom-button {
   min-width: 165px;
   width: auto;
-  height: 50px;
-  letter-spacing: 0.5px;
-  line-height: 50px;
+  height: 40px;
+  letter-spacing: 1.2px;
+  line-height: 40px;
   padding: 0 35px 0 35px;
   font-size: 15px;
   background-color: black;
   color: white;
   text-transform: uppercase;
-  font-family: "Open Sans Condensed";
+  font-family: "Bebas Neue", cursive;
   font-weight: bolder;
   border: none;
   cursor: pointer;
