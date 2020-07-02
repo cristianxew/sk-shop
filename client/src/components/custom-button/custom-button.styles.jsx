@@ -48,7 +48,7 @@ export const CustomButtonContainer = styled.button`
   height: 40px;
   letter-spacing: 1.2px;
   line-height: 40px;
-  padding: 0 35px 0 35px;
+  padding: 0 35px;
   font-size: 15px;
   text-transform: uppercase;
   font-family: "Bebas Neue", cursive;
@@ -57,6 +57,10 @@ export const CustomButtonContainer = styled.button`
   display: flex;
   border: none;
   justify-content: center;
+
+  @media screen and (max-width: 800px) {
+    margin: 15px 0;
+  }
 
   ${getButtonStyles}
 `;
