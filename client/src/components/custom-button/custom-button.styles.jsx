@@ -1,36 +1,37 @@
 import styled, { css } from "styled-components";
 
 const buttonStyles = css`
-  background-color: black;
-  color: white;
+  background-color: #10375c;
+  color: #f4f6ff;
   border: none;
 
   &:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+    background-color: #f4f6ff;
+    color: #10375c;
+    border: 1px solid #f3c623;
   }
 `;
 
 const invertedButtonStyles = css`
-  background-color: white;
-  color: black;
-  border: 1px solid black;
+  background-color: #f4f6ff;
+  color: #10375c;
+  border: 1px solid #10375c;
 
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: #10375c;
+    color: #f4f6ff;
     border: none;
   }
 `;
 
 const isGoogleSignInStyles = css`
-  background-color: #4285f4;
-  color: white;
+  background-color: #f3c623;
+  color: #f4f6ff;
 
   &:hover {
-    background-color: #357ae8;
-    border: none;
+    background-color: #fff;
+    color: #10375c;
+    border: 1px solid #f3c623;
   }
 `;
 
@@ -56,6 +57,7 @@ export const CustomButtonContainer = styled.button`
   cursor: pointer;
   display: flex;
   border: none;
+  border-radius: 10px;
   justify-content: center;
 
   @media screen and (max-width: 800px) {

@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto 0;
+  margin: 50px auto 2rem;
+  color: #10375c;
 
   @media screen and (max-width: 800px) {
     width: 90%;
@@ -44,6 +45,6 @@
     text-align: center;
     margin-top: 40px;
     font-size: 24px;
-    color: firebrick;
+    color: #f3c623;
   }
 }

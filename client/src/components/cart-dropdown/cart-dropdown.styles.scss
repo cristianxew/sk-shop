@@ -1,21 +1,30 @@
 .cart-dropdown {
   position: absolute;
-  width: 18rem;
-  height: 25rem;
+  width: 19rem;
+  height: 28rem;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid #10375c;
   background-color: white;
   top: 90px;
   right: 40px;
   z-index: 5;
+  border-radius: 10px;
+
+  @media screen and (max-width: 800px) {
+    top: 125px;
+    right: 27px;
+  }
 
   .cart-items {
-    height: 240px;
+    height: 22rem;
     display: flex;
     flex-direction: column;
     overflow: auto;
+    @media screen and (max-width: 800px) {
+      height: 21rem;
+    }
   }
 
   button {

@@ -12,6 +12,7 @@ import "./pages/homepage/homepage.styles.scss";
 //import CheckoutPage from "./pages/checkout/checkout.component";
 
 import Header from "./components/header/header.component";
+import Footer from "./components/footer/footer";
 import Spinner from "./components/spinner/spinner.component";
 import ErrorBoundary from "./components/error-boundary/error-boundary.component";
 
@@ -19,6 +20,7 @@ import { selectCurrentUser } from "./redux/user/user.selectors";
 import { checkUserSession } from "./redux/user/user.actions";
 
 //import { selectCollectionsForPreview } from "./redux/shop/shop.selectors";
+import Conatct from "./pages/contactPage/contact.component";
 const HomePage = lazy(() => import("./pages/homepage/homepage.component"));
 const ShopPage = lazy(() => import("./pages/shop/shop.component"));
 const SignInAndSignUpPage = lazy(() =>
@@ -40,6 +42,7 @@ const App = ({ checkUserSession, currentUser }) => {
         <ErrorBoundary>
           <Suspense fallback={<Spinner />}>
             <Route exact path="/" component={HomePage} />
+            <Route exact path="/contact" component={Conatct} />
             <Route path="/shop" component={ShopPage} />
             <Route exact path="/checkout" component={CheckoutPage} />
             <Route
@@ -52,6 +55,7 @@ const App = ({ checkUserSession, currentUser }) => {
           </Suspense>
         </ErrorBoundary>
       </Switch>
+      <Footer />
     </div>
   );
 };

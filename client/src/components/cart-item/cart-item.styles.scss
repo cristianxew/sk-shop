@@ -6,6 +6,8 @@
 
   img {
     width: 30%;
+    height: auto;
+    object-fit: cover;
   }
 
   .item-details {
@@ -15,6 +17,7 @@
     align-items: flex-start;
     justify-content: center;
     padding: 10px 20px;
+    color: #10375c;
 
     .name {
       font-size: 16px;

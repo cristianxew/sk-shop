@@ -1,0 +1,36 @@
+.contact-form-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 176px);
+  .contact-form {
+    width: 50%;
+    height: auto;
+
+    .user-msg {
+      width: 100%;
+      background: transparent;
+      border-radius: 10px;
+      outline-style: none;
+      padding: 0.5rem;
+      border-color: #127681;
+      font-family: inherit;
+    }
+    .contact-btn {
+      margin: 3rem 0;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 800px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 400px) {
+      width: 90%;
+    }
+  }
+  .contact-title {
+    color: #10375c;
+  }
+}

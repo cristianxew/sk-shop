@@ -1,4 +1,11 @@
 .collections-overview {
   display: flex;
   flex-direction: column;
+  padding: 0 6rem;
+  @media screen and (max-width: 800px) {
+    padding: 0 2rem;
+  }
+  @media screen and (max-width: 400px) {
+    padding: 0.5rem;
+  }
 }
