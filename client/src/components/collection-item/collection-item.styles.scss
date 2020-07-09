@@ -27,6 +27,9 @@
     position: absolute;
     top: 235px;
     display: none;
+    &::before {
+      border-radius: 9px;
+    }
     @media screen and (max-width: 800px) {
       display: block;
       opacity: 0.8;
@@ -42,7 +45,7 @@
 
     .custom-button {
       opacity: 0.85;
-      display: flex;
+      display: block;
     }
   }
 
@@ -62,6 +65,8 @@
     .price {
       width: 30%;
       text-align: end;
+      font-weight: bold;
+      color: #f3c623;
     }
   }
   @media screen and (max-width: 1200px) {

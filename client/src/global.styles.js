@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 body {
-    font-family: "Lobster", cursive;
+    font-family: "Lobster Two", cursive;
     padding: 0;
     height: 100%;
     background: #f4f6ff;
@@ -19,10 +19,11 @@ body {
 
   hr {
     width: 100%;
-    height: 12px;
     border: 0;
-    box-shadow: inset 0 12px 12px -12px RGBA(18,118,129,0.5);
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(18, 118, 129, 0.1), rgba(18, 118, 129, 1), rgba(18, 118, 129, 0.1));
   }
+
 
   * {
     box-sizing: border-box;
